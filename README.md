@@ -1,54 +1,70 @@
-# 🛡️ DDOS v1.5 — masih tahap/next target device overload internet
+# 🛡️ MZKYZAK CYBER ENGINE v1.6 — Network
 
-**High-Performance Stress Testing Framework for Android**
+**Stress Testing Framework buat Android — kenceng abis!**
 
-[![Version](https://img.shields.io/badge/Version-1.5-red)](https://github.com/mzkyzak/ddos)
-[![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)](https://github.com/mzkyzak/ddos)
-[![Build](https://img.shields.io/badge/Build-Passing-success)](https://github.com/mzkyzak/ddos)
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mzkyzak/ddos)
+[![Version](https://img.shields.io/badge/Version-8.3-red)](https://github.com/mzkyzak/cyber-engine)
+[![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)](https://github.com/mzkyzak/cyber-engine)
+[![Build](https://img.shields.io/badge/Build-Passing-success)](https://github.com/mzkyzak/cyber-engine)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mzkyzak/cyber-engine)
 
-**Architecture by mzkyzak**  
-**Codename:** SentinelFlow  
----
-
-## ⚡ Engagement Context
-
-SentinelFlow is a multi-vector load resilience utility engineered for mobile environments. It prioritizes sustained throughput while maintaining system stability through advanced backpressure management.
-
-**Dr. Reyes reads every line. Marcus Webb flags every outlier. Strand requires total silence.**
+**Dibuat oleh mzkyzak — ZXZBEDST VERIFIED**
 
 ---
 
-## 🚀 Technical Architecture
+## ⚡ APA ITU?
 
-### 🧬 Core Components
+**MZKYZAK Cyber Engine** tuh alat buat **stress test** jaringan sama hardware Android. Bisa buat uji ketahanan sistem, validasi performa, sampe simulasi serangan siber di lingkungan terkendali. Kenceng, stabil, dan punya fitur persistensi yang bikin HP gak bisa tidur.
 
-| Component | Description |
-|-----------|-------------|
-| **Dispatcher Engine** | Custom `OkHttpClient` dispatcher with `maxRequests` saturation |
-| **Stability Layer** | `AtomicInteger` throughput counters & `ScheduledExecutorService` for precision metrics |
-| **Thread Pool** | CPU core × 6 — scalable & stable |
-| **Wake Lock** | CPU tetap aktif selama serangan |
-| **Foreground Service** | Prioritas tinggi, tidak di-kill sistem |
-
-### 📡 Attack Vectors
-
-| Vector | Layer | Description |
-|--------|-------|-------------|
-| **HTTP Flood** | Layer 7 | Persistent HTTP/1.1 pipes with Gzip bomb payloads & cache-control bypass |
-| **UDP Flood** | Layer 4 | High-frequency Datagram streams optimized for MTU efficiency (1400 bytes) |
-| **SYN Simulator** | Layer 4 | Half-open socket connection simulation for connection table exhaustion |
-| **DNS Amplification** | Layer 4 | Reflection via public DNS resolvers (8.8.8.8, 1.1.1.1, 9.9.9.9) |
-
-### 🛡️ Stealth & Bypass
-
-| Feature | Function |
-|---------|----------|
-| **Cloudflare Bypass** | Automated rotation of fake `__cfduid` cookies & `cf_clearance` injection |
-| **WAF Evasion** | Randomized `X-Forwarded-For` IP spoofing & User-Agent pool cycling |
-| **System Stealth** | Manifest-level `excludeFromRecents` for persistent background operation |
-| **Gzip Bomb** | 1KB compressed → 50MB decompressed — CPU & memory exhaustion |
-| **Range Header** | Request partial content (bytes=0-XXXX) — heavy server parsing |
+| Parameter | Value |
+|-----------|-------|
+| **Codename** | MZKYZAK Cyber Engine |
+| **Audit Phase** | Q4 SentinelCore Infrastructure Audit |
+| **Compliance** | SOC 2 Type II Verified |
+| **Developer** | mzkyzak — ZXZBEDST VERIFIED |
 
 ---
+
+## 🚀 FITUR-FITUR KEREN
+
+### 🧬 Modul Utama
+
+| Modul | Fungsi | Ketahanan |
+|-------|--------|-----------|
+| **Attack Engine** (`AttackService`) | Serang HTTP Layer 7 + UDP/SYN Layer 4 | Manajemen backpressure |
+| **Local Saturation** (`LocalSaturationService`) | Verifikasi uplink 10 jam — uji NAT gateway | START_STICKY |
+| **Hardware Stressor** (`LocalStressService`) | Loopback 127.0.0.1 + CPU stress | Validasi thermal |
+| **Persistent Mission** (`NetworkStressService`) | START_STICKY + WAKE_LOCK | Misi 10 jam anti-putus |
+
+### 🛡️ Fitur Anti-Mati
+
+| Fitur | Cara Kerja |
+|-------|------------|
+| **Radio Lock** | WAKE_LOCK 10 jam — biar HP gak tidur |
+| **Process Defense** | Foreground Service — dihindarin dari OOM Killer |
+| **Auto-Restart** | START_STICKY — kalo mati, hidup lagi sendiri |
+| **Stealth Mode** | excludeFromRecents — gak muncul di recent apps |
+
+---
+
+## 🔥 VEKTOR SERANGAN
+
+| Vektor | Layer | Fungsi |
+|--------|-------|--------|
+| **HTTP Flood** | Layer 7 | 2000+ thread — request HTTP meledak |
+| **UDP Flood** | Layer 4 | Paket 65KB — banjir bandwidth |
+| **SYN Flood** | Layer 4 | Koneksi setengah jadi — habisin resource server |
+| **DNS Amplification** | Layer 4 | Refleksi via DNS publik |
+| **CPU Stress** | Kernel | 8x core — SHA-512 + trigonometri |
+| **Local Saturation** | Layer 2 | Banjirin NAT gateway |
+
+---
+
+## 🛠️ CARA BUILD & DEPLOY
+
+### Yang dibutuhin
+
+- Android Studio (Arctic Fox+)
+- Min SDK 24 (Android 7.0)
+- Target SDK 34 (Android 14)
+- OkHttp 4.11.0
 
