@@ -1,9 +1,0 @@
-<resources>
-    <style name="Theme.SentinelFlow" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">#FF3D00</item>
-        <item name="colorPrimaryVariant">#B22A00</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="android:windowBackground">#050505</item>
-        <item name="android:statusBarColor">#050505</item>
-    </style>
-</resources>
